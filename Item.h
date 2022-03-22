@@ -7,10 +7,12 @@ class Item {
       float discount; // out of 100 e.g. discount = 15
    public:
       // 1. Write the Default Constructor
+      Item();
       // 2. Write the Overloaded Constructor
+      Item(int icode,float punitPrice);
       // 3. Write the Destructor
-
-      void setDiscount(float punitPrice);
+      ~Item();
+      void setDiscount(float pdiscount);
       float getDiscount();
       float discountedPrice();
       void display();
